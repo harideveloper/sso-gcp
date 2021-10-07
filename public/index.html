@@ -1,0 +1,24 @@
+
+<html lang="en">
+  <head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="25619477971-2usjubu2iiqj5bk1ae6bid2579289dcf.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+    <!-- The sign-in button -->
+    <div id="sso" class="g-signin2" data-onsuccess="ssohandler" data-theme="dark"></div>
+    <h1>sign in</h1>
+
+    <!-- sign in function handler -->
+    <script>
+      function ssohandler(user) {
+        console.log(user)
+        document.getElementById("sso").innerHTML = "Sign-on success";
+      };
+    </script>
+  </body>
+</html>
+
+
+
